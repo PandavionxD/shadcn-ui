@@ -1,8 +1,11 @@
+import { Title } from "@/components/Title";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Loader2, Mail } from "lucide-react";
 
 export default function buttonPage() {
   return (
+    <div>
+      <Title titulo={"Botón"} />
     <div className="flex gap-4 flex-wrap ">
       <Button variant={"default"}>default </Button>
       <Button disabled variant={"default"}>disabled </Button>
@@ -23,6 +26,7 @@ export default function buttonPage() {
       <Loader2 className="animate-spin" />
       Please wait
     </Button>
+    </div>
     </div>
   );
 }
