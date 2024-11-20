@@ -22,13 +22,13 @@ export default function CheckBoxPage() {
         <p className="text-sm text-muted-foreground">
           You agree to our Terms of Service and Privacy Policy.
         </p>
-        <div>
+        <>
           {terms ? (
             <Badge variant={"info"}> Great! </Badge>
           ) : (
-            <Badge variant={"destructive"}> Great! </Badge>
+            <Badge variant={"destructive"}> Warning! </Badge>
           )}
-        </div>
+        </>
       </div>
     </div>
   );
