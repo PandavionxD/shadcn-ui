@@ -20,8 +20,8 @@ export default function SonnerPage() {
               }
             ),
             action: {
-              label: "X",
-              onClick: () => console.log("Undo"),
+              label: "action",
+              onClick: () => console.log("Action executed!"),
             },
           })
         }
@@ -32,7 +32,7 @@ export default function SonnerPage() {
         variant="outline"
         onClick={() =>
           toast.success("Evento creado!", {
-            duration:1500,
+            duration:3000,
             position:"top-right",
             description: new Date().toLocaleString("es-Es",
               {
@@ -51,7 +51,7 @@ export default function SonnerPage() {
         variant="outline"
         onClick={() =>
           toast.error("Evento creado!", {
-            duration:1500,
+            duration:3000,
             position:"top-right",
             description: new Date().toLocaleString("es-Es",
               {
@@ -70,7 +70,7 @@ export default function SonnerPage() {
         variant="outline"
         onClick={() =>
           toast.info("Evento creado!", {
-            duration:1500,
+            duration:3000,
             position:"top-right",
             description: new Date().toLocaleString("es-Es",
               {
@@ -89,7 +89,7 @@ export default function SonnerPage() {
         variant="outline"
         onClick={() =>
           toast.warning("Evento creado!", {
-            duration:1500,
+            duration:3000,
             position:"top-right",
             description: new Date().toLocaleString("es-Es",
               {
